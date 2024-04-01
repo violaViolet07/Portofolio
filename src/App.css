@@ -1,0 +1,17 @@
+body {
+  background: url(background.jpg) no-repeat center fixed;
+  -webkit-background: cover;
+  -moz-background: cover;
+  -o-background: cover;
+  background: cover;
+}
+
+.mainContainer {
+  background: #5E548E
+}
+
+.cardContainer {
+  width: 500px;
+  margin: 3rem;
+  margin: 5rem auto;
+}
