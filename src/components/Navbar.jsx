@@ -40,7 +40,7 @@ const menuIcons = [
     {
         listIcon: <Apps />,
         listText: "Portofolio",
-        listPath:"/portofolio"
+        listPath: "/portofolio"
     },
     {
         listIcon: <ContactlessIcon />,
@@ -86,10 +86,10 @@ const Navbar = () => {
                     >
                         <ListItemIcon>{isIcon.listIcon}</ListItemIcon>
                         <ListItemText primary={isIcon.listText} />
-                        
+
                     </ListItem>
                 ))}
-                 <ListItem
+                <ListItem
                     sx={{
                         display: 'flex',
                         alignItems: 'center',
@@ -97,18 +97,18 @@ const Navbar = () => {
                     }}
                 >
                     <ListItemIcon>
-                        <a  href="https://www.linkedin.com/in/violeta-v-b452522a1/" target="_blank" rel="noopener noreferrer" style={{ color: '#10002b' }}>
+                        <a href="https://www.linkedin.com/in/violet-v-03076b308/" target="_blank" rel="noopener noreferrer" style={{ color: '#10002b' }}>
                             <LinkedInIcon />
                         </a>
                     </ListItemIcon>
                     <ListItemIcon>
-                        <a  href="https://github.com/violaViolet07" target="_blank" rel="noopener noreferrer" style={{ color: '#10002b' }}>
+                        <a href="https://github.com/violaViolet07" target="_blank" rel="noopener noreferrer" style={{ color: '#10002b' }}>
                             <GitHubIcon />
                         </a>
                     </ListItemIcon>
                 </ListItem>
             </List>
-            
+
         </Box>
     );
     return (
