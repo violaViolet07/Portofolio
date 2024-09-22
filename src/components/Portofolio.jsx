@@ -19,51 +19,52 @@ const Portofolio = () => {
 
     // Define your project data with GitHub repository links
     const projects = [
-        { 
-            name: 'E-commerce Website ', 
-            image: Project1, 
-            githubLink: 'https://github.com/violaViolet07/Web-Project-For-an-e-commerce-website-partially-functional-', 
+        {
+            name: 'E-commerce Website ',
+            image: Project1,
+            githubLink: 'https://github.com/violaViolet07/Web-Project-For-an-e-commerce-website-partially-functional-',
             description: 'Technology used:PHP,HTML,CSS,Hack',
             hasLiveDemo: false // Example property to indicate whether the project has a live demo
         },
-        { 
-            name: 'Yelp Camp - A Review Website ', 
-            image: Project2, 
-            githubLink: 'https://github.com/violaViolet07/Yelp-Camp', 
+        {
+            name: 'Yelp Camp - A Review Website ',
+            image: Project2,
+            githubLink: 'https://github.com/violaViolet07/Yelp-Camp',
             description: 'Technology used:Javascipt,HTML,CSS,Node.js with Express.js',
             hasLiveDemo: true,
-            liveDemoLink:'https://yelp-camp-5qke.onrender.com/'
+            liveDemoLink: 'https://yelp-camp-5qke.onrender.com/'
         },
-        
-        { 
-            name: 'A react random dice roll', 
-            image: Project3, 
-            githubLink: 'https://github.com/violaViolet07/LuckyRolls', 
+
+        {
+            name: 'A react random dice roll',
+            image: Project3,
+            githubLink: 'https://github.com/violaViolet07/LuckyRolls',
             description: 'Technology used:React.js,Javascipt,HTML,CSS.',
             hasLiveDemo: true,
-            liveDemoLink:'https://luckyrolls.onrender.com/' // Example property to indicate whether the project has a live demo
+            liveDemoLink: 'https://luckyrolls.onrender.com/' // Example property to indicate whether the project has a live demo
         },
-        { 
-            name: 'Search TV API', 
-            image: Project4, 
-            githubLink: 'https://github.com/violaViolet07/SearchTV', 
+        {
+            name: 'Search TV API',
+            image: Project4,
+            githubLink: 'https://github.com/violaViolet07/SearchTV',
             description: 'Technology used:HTML,Javascript',
-            hasLiveDemo: false // Example property to indicate whether the project has a live demo
+            hasLiveDemo: true,
+            liveDemoLink: 'https://tv-kerko.onrender.com/' // Example property to indicate whether the project has a live demo
         },
-        { 
-            name: 'Java Snake Game', 
-            image: Project5, 
-            githubLink: 'https://github.com/violaViolet07/A-Java-Snake-Game-with-added-play-again-btn-', 
+        {
+            name: 'Java Snake Game',
+            image: Project5,
+            githubLink: 'https://github.com/violaViolet07/A-Java-Snake-Game-with-added-play-again-btn-',
             description: 'Technology used:Java',
-            hasLiveDemo: false 
+            hasLiveDemo: false
         },
-        { 
-            name: 'React To-Do List', 
-            image: Project6, 
-            githubLink: 'https://github.com/violaViolet07/TO-DO-List-React', 
+        {
+            name: 'React To-Do List',
+            image: Project6,
+            githubLink: 'https://github.com/violaViolet07/TO-DO-List-React',
             description: 'Technology used:React.js,Javascipt,HTML,CSS',
             hasLiveDemo: true,
-            liveDemoLink:'https://to-do-list-react-k1y3.onrender.com/' 
+            liveDemoLink: 'https://to-do-list-react-k1y3.onrender.com/'
         },
     ];
 
