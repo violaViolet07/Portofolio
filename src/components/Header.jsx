@@ -4,17 +4,15 @@ import {
     Avatar,
     Grid,
 } from "@mui/material"
-//import avatar from
 import { ReactTyped } from "react-typed";
-import { Box, ThemeProvider, createTheme } from '@mui/system';
-import avatar from "../avatar.png" 
+import { Box } from '@mui/system';
 const Header = () => {
     return (
         <Box sx={{
             position: "absolute",
             top: "50%",
-            letf: "50%",
-            transform: "transleate(-50%, -50%)",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
             width: "100vw",
             textAlign: "center",
             zIndex: 1
@@ -23,8 +21,14 @@ const Header = () => {
                 <Avatar sx={{
                     width: "150px",
                     height: "150px",
-                    margin: "1rem"
-                }} src={avatar} alt="Viola" />
+                    margin: "1rem",
+                    bgcolor: "#f0a6ca",
+                    color: "#1f1f1f",
+                    fontSize: "3rem",
+                    fontWeight: 700
+                }}>
+                    VV
+                </Avatar>
 
             </Grid>
             <Typography sx={{ color: "#f0a6ca" }} variant="h4">
