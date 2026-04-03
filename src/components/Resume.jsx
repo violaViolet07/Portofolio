@@ -3,10 +3,12 @@ import { Box, Typography, Card, CardContent, Grid } from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import ScienceIcon from '@mui/icons-material/Science';
+import SecurityIcon from '@mui/icons-material/Security';
 import Navbar from './Navbar';
 import ParticlesComponent from './ParticlesComponent';
 import Skills from './Skills';
 import Experience from './Experience';
+import Footer from './Footer';
 
 const education = [
     {
@@ -37,9 +39,16 @@ const researchHighlights = [
         details: [
             'Accepted and presented at INFOTEH 2026',
             'IEEE Xplore indexing pending',
-            'Built on coordinated threat analysis across time, geography, and suspicious traffic behavior'
+            'Designed a coordinated visual workflow for analyzing AWS VPC flow-log derived data across time, geography, and suspicious traffic behavior.',
+            'Connected cloud log investigation with practical dashboard-based anomaly detection and exploratory analysis.'
         ]
     }
+];
+
+const labsAndCompetitions = [
+    'Completed a 3-month National Cybersecurity Marathon using SimSpace and CTF-style exercises.',
+    'Worked through practical cyber-range scenarios focused on investigation, analysis, and response thinking.',
+    'Strengthened hands-on exposure to applied cybersecurity beyond classroom and theory-based learning.'
 ];
 
 const sectionCardSx = {
@@ -206,7 +215,37 @@ const Resume = () => {
                 </Box>
             </Box>
 
+            <Box py={10} sx={{ backgroundColor: '#5E548E', color: 'white' }}>
+                <Box textAlign="center" mb={6}>
+                    <SecurityIcon sx={{ width: '6rem', height: 'auto', color: 'white' }} />
+                    <Typography variant="h3" mt={4} mb={2}>
+                        Competitions & Labs
+                    </Typography>
+                    <Typography variant="body1" mb={6} mx="auto" sx={{ maxWidth: '75%' }}>
+                        Practical cybersecurity experience gained through hands-on exercises and structured challenge environments.
+                    </Typography>
+                </Box>
+
+                <Box maxWidth="lg" mx="auto" px={3}>
+                    <Card sx={sectionCardSx}>
+                        <CardContent sx={{ p: 4 }}>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
+                                {labsAndCompetitions.map((item) => (
+                                    <Box key={item} sx={detailRowSx}>
+                                        <Box sx={detailDotSx} />
+                                        <Typography variant="body1" sx={{ color: '#CBD5E0', lineHeight: 1.7 }}>
+                                            {item}
+                                        </Typography>
+                                    </Box>
+                                ))}
+                            </Box>
+                        </CardContent>
+                    </Card>
+                </Box>
+            </Box>
+
             <Skills />
+            <Footer />
         </>
     )
 }

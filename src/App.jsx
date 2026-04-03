@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes,Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { CssBaseline } from '@mui/material';
 import Home from "./components/"
 import Resume from './components/Resume';
@@ -15,7 +15,8 @@ function App() {
       <Routes> 
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/portofolio" element={<Portofolio />} />
+        <Route path="/portfolio" element={<Portofolio />} />
+        <Route path="/portofolio" element={<Navigate to="/portfolio" replace />} />
       </Routes>
 
 

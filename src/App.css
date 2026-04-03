@@ -5,11 +5,12 @@ body {
 }
 
 .mainContainer {
-  background: #5E548E
+  background: #5E548E;
+  min-height: 100vh;
 }
 
 .cardContainer {
-  width: 500px;
-  margin: 3rem;
-  margin: 5rem auto;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
 }
