@@ -3,18 +3,25 @@ import { Box, Typography } from '@mui/material';
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
 
 const skills = [
-  'C/C++',
-  'Java',
+  'Windows Server',
+  'Active Directory',
+  'DNS',
+  'DHCP',
+  'TCP/IP',
+  'MikroTik',
+  'Windows Firewall',
+  'Hyper-V',
+  'Linux',
+  'Virtualization',
+  'SIEM Fundamentals',
+  'Log Analysis',
+  'Cloud Threat Analytics',
+  'R',
+  'Python',
+  'SQL',
   'JavaScript',
-  'PHP',
   'Node.js',
-  'Express.js',
-  'EJS',
-  'HTML',
-  'CSS',
   'React.js',
-  'Material-UI',
-  'Oracle',
   'MySQL',
   'MongoDB'
 ];
@@ -28,9 +35,8 @@ const Skills = () => {
           Skills & Technologies
         </Typography>
         <Typography variant="body1" mb={6} mx="auto" sx={{ maxWidth: '75%' }}>
-        Explore my comprehensive skill set and technological proficiencies below.
-  From programming languages to database management systems, discover the range
-  of capabilities I bring to the table.
+          A blend of cybersecurity, IT infrastructure, troubleshooting, and development skills
+          applied across public-sector systems and technical projects.
         </Typography>
       </Box>
       <Box display="flex" flexWrap="wrap" justifyContent="center">
