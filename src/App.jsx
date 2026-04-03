@@ -4,13 +4,14 @@ import { CssBaseline } from '@mui/material';
 import Home from "./components/"
 import Resume from './components/Resume';
 import Portofolio from './components/Portofolio';
+import ParticlesComponent from './components/ParticlesComponent';
 
 
 function App() {
   return (
     <>
       <CssBaseline />
-
+      <ParticlesComponent />
 
       <Routes> 
         <Route path="/" element={<Home />} />

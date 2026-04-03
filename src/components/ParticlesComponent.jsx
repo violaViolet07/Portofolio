@@ -2,18 +2,28 @@ import React, { useEffect, useMemo, useState } from 'react';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
+let particlesEnginePromise;
+
 const ParticlesComponent = () => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadSlim(engine);
-    }).then(() => {
+    if (!particlesEnginePromise) {
+      particlesEnginePromise = initParticlesEngine(async (engine) => {
+        await loadSlim(engine);
+      });
+    }
+
+    particlesEnginePromise.then(() => {
       setInit(true);
     });
   }, []);
 
   const options = useMemo(() => ({
+    fullScreen: {
+      enable: true,
+      zIndex: 0,
+    },
     particles: {
       color: {
         value: "#FFFFFF",
@@ -39,7 +49,7 @@ const ParticlesComponent = () => {
         density: {
           enable: true,
         },
-        value: 150,
+        value: 95,
       },
       opacity: {
         value: 0.5,

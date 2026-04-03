@@ -5,7 +5,6 @@ import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import ScienceIcon from '@mui/icons-material/Science';
 import SecurityIcon from '@mui/icons-material/Security';
 import Navbar from './Navbar';
-import ParticlesComponent from './ParticlesComponent';
 import Skills from './Skills';
 import Experience from './Experience';
 import Footer from './Footer';
@@ -84,7 +83,6 @@ const detailDotSx = {
 const Resume = () => {
     return (
         <>
-            <ParticlesComponent />
             <Navbar />
             <Box sx={{ backgroundColor: '#5E548E', color: 'white' }}>
                 <Box component="header" sx={{ pb: 2, minHeight: 'auto' }}>

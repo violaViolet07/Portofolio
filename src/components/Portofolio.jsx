@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from './Navbar'
-import ParticlesComponent from './ParticlesComponent';
 import Footer from './Footer';
 import { Box, Grid, Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography, Chip, Stack } from "@mui/material"
 
@@ -147,7 +146,6 @@ const Portofolio = () => {
     return (
         <>
             <Box component="div" sx={{ minHeight: "100vh", backgroundColor: '#5E548E' }}>
-                <ParticlesComponent />
                 <Navbar />
 
                 <Box maxWidth="lg" mx="auto" px={3} pt={6} pb={2}>
