@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import ParticlesComponent from './ParticlesComponent';
 import { Box, Grid, Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography } from "@mui/material"
 
-import Project1 from "../images/Project1.png"
+import Project1 from "../images/Project1.jpg"
 import Project2 from "../images/Project2.png"
 import Project3 from "../images/Project3.png"
 import Project4 from "../images/Project4.png"
