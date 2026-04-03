@@ -53,9 +53,11 @@ const Experience = () => {
           {workExperience.map((role) => (
             <Grid item xs={12} key={role.position}>
               <Card sx={{
-                backgroundColor: '#2D3748',
+                backgroundColor: 'rgba(32, 42, 58, 0.92)',
                 borderRadius: '1rem',
-                border: '1px solid #4A5568'
+                border: '1px solid rgba(255,255,255,0.1)',
+                boxShadow: '0 18px 40px rgba(0,0,0,0.22)',
+                backdropFilter: 'blur(2px)'
               }}>
                 <CardContent sx={{ p: 4 }}>
                   <Typography variant="h4" sx={{ color: '#E2E8F0', mb: 2, fontWeight: 'bold' }}>

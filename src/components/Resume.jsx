@@ -52,9 +52,11 @@ const labsAndCompetitions = [
 ];
 
 const sectionCardSx = {
-    backgroundColor: '#2D3748',
+    backgroundColor: 'rgba(32, 42, 58, 0.92)',
     borderRadius: '1rem',
-    border: '1px solid #4A5568',
+    border: '1px solid rgba(255,255,255,0.1)',
+    boxShadow: '0 18px 40px rgba(0,0,0,0.22)',
+    backdropFilter: 'blur(2px)',
     height: '100%'
 };
 
@@ -85,7 +87,7 @@ const Resume = () => {
             <ParticlesComponent />
             <Navbar />
 
-            <Box component="header" className="mainContainer" sx={{ pb: 3 }}>
+            <Box component="header" sx={{ pb: 2, minHeight: 'auto' }}>
                 <Box textAlign="center" pt={8} pb={3}>
                     <Typography variant="h4" align="center" sx={{ color: 'white' }}>
                         ABOUT ME
