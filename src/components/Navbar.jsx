@@ -12,7 +12,7 @@ import {
     Typography,
     ListItemIcon,
 } from '@mui/material'
-import { Box, ThemeProvider, createTheme } from '@mui/system';
+import { Box } from '@mui/system';
 import {
     ArrowBack,
     AssignmentInd,
@@ -21,7 +21,6 @@ import {
 } from '@mui/icons-material'
 import ContactlessIcon from '@mui/icons-material/Contactless';
 import MobileRightMenuSlider from "@mui/material/Drawer"
-import avatar from "../avatar.png"
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 //css styles
@@ -66,10 +65,14 @@ const Navbar = () => {
                     margin: '0.5rem auto',
                     width: '80px',
                     height: '80px',
+                    bgcolor: '#E0B1CB',
+                    color: '#272640',
+                    fontWeight: 700
                 }}
-                src={avatar}
                 alt="Violeta Vako"
-            />
+            >
+                VV
+            </Avatar>
             <Divider />
             <List>
                 {menuIcons.map((isIcon, key) => (
