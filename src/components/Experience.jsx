@@ -36,8 +36,8 @@ const workExperience = [
 
 const Experience = () => {
   return (
-    <Box id="experience" py={10} sx={{ backgroundColor: '#5E548E', color: 'white' }}>
-      <Box textAlign="center" mb={6}>
+    <Box id="experience" sx={{ backgroundColor: '#5E548E', color: 'white', pt: 3, pb: 10 }}>
+      <Box textAlign="center" mb={5}>
         <WorkIcon sx={{ width: '6rem', height: 'auto', color: 'white' }} />
         <Typography variant="h3" mt={4} mb={2}>
           Work Experience

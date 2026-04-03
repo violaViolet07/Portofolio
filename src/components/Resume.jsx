@@ -85,8 +85,8 @@ const Resume = () => {
             <ParticlesComponent />
             <Navbar />
 
-            <Box component="header" className="mainContainer" sx={{ pb: 8 }}>
-                <Box textAlign="center" pt={8} pb={4}>
+            <Box component="header" className="mainContainer" sx={{ pb: 3 }}>
+                <Box textAlign="center" pt={8} pb={3}>
                     <Typography variant="h4" align="center" sx={{ color: 'white' }}>
                         ABOUT ME
                     </Typography>
