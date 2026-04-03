@@ -1,89 +1,71 @@
-﻿import React from 'react'
+import React from 'react'
 import Navbar from './Navbar'
 import ParticlesComponent from './ParticlesComponent';
-import { Box, Grid, Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography } from '@mui/material'
+import { Box, Grid, Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Typography } from "@mui/material"
 
-const createProjectPreview = (title, accent, secondary) =>
-    `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
-        <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
-            <rect width="1200" height="630" fill="#081121"/>
-            <circle cx="1030" cy="130" r="220" fill="${accent}" fill-opacity="0.18"/>
-            <circle cx="170" cy="520" r="220" fill="${secondary}" fill-opacity="0.16"/>
-            <rect x="88" y="82" width="1024" height="466" rx="28" fill="#101b33" stroke="#ffffff" stroke-opacity="0.14"/>
-            <text x="140" y="210" fill="#8fb8ff" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="4">PORTFOLIO PROJECT</text>
-            <text x="140" y="300" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">${title}</text>
-            <text x="140" y="380" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="30">Built by Violeta</text>
-            <rect x="140" y="430" width="220" height="14" rx="7" fill="${accent}"/>
-            <rect x="140" y="470" width="320" height="14" rx="7" fill="${secondary}"/>
-        </svg>
-    `)}`;
-
-const projectPreviews = {
-    ecommerce: createProjectPreview('E-commerce Website', '#7c3aed', '#06b6d4'),
-    yelpCamp: createProjectPreview('Yelp Camp', '#22c55e', '#f59e0b'),
-    luckyRolls: createProjectPreview('Lucky Rolls', '#ef4444', '#f97316'),
-    searchTv: createProjectPreview('Search TV API', '#3b82f6', '#14b8a6'),
-    snakeGame: createProjectPreview('Java Snake Game', '#84cc16', '#22c55e'),
-    todoList: createProjectPreview('React To-Do List', '#ec4899', '#8b5cf6'),
-    cyberThreats: createProjectPreview('Cyber Threat Analytics', '#38bdf8', '#22c55e'),
-};
+import Project1 from "../images/Project1.png"
+import Project2 from "../images/Project2.png"
+import Project3 from "../images/Project3.png"
+import Project4 from "../images/Project4.png"
+import Project5 from "../images/Project5.png"
+import Project6 from "../images/Project6.png"
+import Project7 from "../images/Project7.png"
 
 const Portofolio = () => {
-    const openExternalLink = (url) => {
-        window.open(url, '_blank', 'noopener,noreferrer');
+    const handleShare = (githubRepoLink) => {
+        window.open(githubRepoLink, '_blank', 'noopener,noreferrer');
     };
 
     const projects = [
         {
             name: 'E-commerce Website',
-            image: projectPreviews.ecommerce,
-            projectLink: 'https://github.com/violaViolet07/Web-Project-For-an-e-commerce-website-partially-functional-',
+            image: Project1,
+            githubLink: 'https://github.com/violaViolet07/Web-Project-For-an-e-commerce-website-partially-functional-',
             description: 'Technology used: PHP, HTML, CSS, Hack',
-            hasLiveDemo: false,
+            hasLiveDemo: false
         },
         {
             name: 'Yelp Camp - A Review Website',
-            image: projectPreviews.yelpCamp,
-            projectLink: 'https://github.com/violaViolet07/Yelp-Camp',
+            image: Project2,
+            githubLink: 'https://github.com/violaViolet07/Yelp-Camp',
             description: 'Technology used: JavaScript, HTML, CSS, Node.js with Express.js',
             hasLiveDemo: true,
             liveDemoLink: 'https://yelp-camp-5qke.onrender.com/'
         },
         {
             name: 'A React Random Dice Roll',
-            image: projectPreviews.luckyRolls,
-            projectLink: 'https://github.com/violaViolet07/LuckyRolls',
+            image: Project3,
+            githubLink: 'https://github.com/violaViolet07/LuckyRolls',
             description: 'Technology used: React.js, JavaScript, HTML, CSS',
             hasLiveDemo: true,
             liveDemoLink: 'https://luckyrolls.onrender.com/'
         },
         {
             name: 'Search TV API',
-            image: projectPreviews.searchTv,
-            projectLink: 'https://github.com/violaViolet07/SearchTV',
+            image: Project4,
+            githubLink: 'https://github.com/violaViolet07/SearchTV',
             description: 'Technology used: HTML, JavaScript',
-            hasLiveDemo: true,
-            liveDemoLink: 'https://tv-kerko.onrender.com/'
+            hasLiveDemo: false
         },
         {
             name: 'Java Snake Game',
-            image: projectPreviews.snakeGame,
-            projectLink: 'https://github.com/violaViolet07/A-Java-Snake-Game-with-added-play-again-btn-',
+            image: Project5,
+            githubLink: 'https://github.com/violaViolet07/A-Java-Snake-Game-with-added-play-again-btn-',
             description: 'Technology used: Java',
-            hasLiveDemo: false,
+            hasLiveDemo: false
         },
         {
             name: 'React To-Do List',
-            image: projectPreviews.todoList,
-            projectLink: 'https://github.com/violaViolet07/TO-DO-List-React',
+            image: Project6,
+            githubLink: 'https://github.com/violaViolet07/TO-DO-List-React',
             description: 'Technology used: React.js, JavaScript, HTML, CSS',
             hasLiveDemo: true,
             liveDemoLink: 'https://to-do-list-react-k1y3.onrender.com/'
         },
         {
             name: 'Cyber Threat Analytics Dashboard',
-            image: projectPreviews.cyberThreats,
-            projectLink: 'https://cyber-threats.shinyapps.io/rsearchpaper/',
+            image: Project7,
+            githubLink: 'https://github.com/violaViolet07/Coordinated-AWS-FLow-Logs-Dashboard',
             description: 'Technology used: R, Shiny, shinydashboard, tidyverse, Plotly, Leaflet, DT',
             hasLiveDemo: true,
             liveDemoLink: 'https://cyber-threats.shinyapps.io/rsearchpaper/'
@@ -91,7 +73,7 @@ const Portofolio = () => {
     ];
 
     return (
-        <Box component="div" className='mainContainer' sx={{ height: '100%' }}>
+        <Box component="div" className='mainContainer' sx={{ height: "100%" }}>
             <ParticlesComponent />
             <Navbar />
             <Grid container justifyContent="center" spacing={3} sx={{ mt: 4 }}>
@@ -115,11 +97,11 @@ const Portofolio = () => {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions>
-                                <Button size="small" color="primary" onClick={() => openExternalLink(project.projectLink)}>
+                                <Button size="small" color="primary" onClick={() => handleShare(project.githubLink)}>
                                     Link
                                 </Button>
                                 {project.hasLiveDemo ? (
-                                    <Button size="small" color="primary" onClick={() => openExternalLink(project.liveDemoLink)}>
+                                    <Button size="small" color="primary" onClick={() => window.open(project.liveDemoLink, '_blank', 'noopener,noreferrer')}>
                                         Live Demo
                                     </Button>
                                 ) : (
