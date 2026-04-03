@@ -86,34 +86,34 @@ const Resume = () => {
         <>
             <ParticlesComponent />
             <Navbar />
+            <Box sx={{ backgroundColor: '#5E548E', color: 'white' }}>
+                <Box component="header" sx={{ pb: 2, minHeight: 'auto' }}>
+                    <Box textAlign="center" pt={8} pb={3}>
+                        <Typography variant="h4" align="center" sx={{ color: 'white' }}>
+                            ABOUT ME
+                        </Typography>
+                    </Box>
 
-            <Box component="header" sx={{ pb: 2, minHeight: 'auto' }}>
-                <Box textAlign="center" pt={8} pb={3}>
-                    <Typography variant="h4" align="center" sx={{ color: 'white' }}>
-                        ABOUT ME
-                    </Typography>
+                    <Box maxWidth="lg" mx="auto" px={3}>
+                        <Card sx={sectionCardSx}>
+                            <CardContent sx={{ p: 4 }}>
+                                <Typography variant="body1" sx={{ color: '#E2E8F0', fontSize: '1.15rem', lineHeight: 1.9 }}>
+                                    IT Specialist and master&apos;s student in Information and Network Security with experience in
+                                    Windows Server administration, Active Directory, DNS, DHCP, virtualization, endpoint support,
+                                    and network security in public-sector environments.
+                                </Typography>
+                                <Typography variant="body1" sx={{ color: '#CBD5E0', fontSize: '1.05rem', lineHeight: 1.9, mt: 3 }}>
+                                    I enjoy building practical, security-focused solutions, from cloud threat analytics dashboards
+                                    and log analysis projects to responsive web applications that present technical work clearly and professionally.
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Box>
                 </Box>
 
-                <Box maxWidth="lg" mx="auto" px={3}>
-                    <Card sx={sectionCardSx}>
-                        <CardContent sx={{ p: 4 }}>
-                            <Typography variant="body1" sx={{ color: '#E2E8F0', fontSize: '1.15rem', lineHeight: 1.9 }}>
-                                IT Specialist and master&apos;s student in Information and Network Security with experience in
-                                Windows Server administration, Active Directory, DNS, DHCP, virtualization, endpoint support,
-                                and network security in public-sector environments.
-                            </Typography>
-                            <Typography variant="body1" sx={{ color: '#CBD5E0', fontSize: '1.05rem', lineHeight: 1.9, mt: 3 }}>
-                                I enjoy building practical, security-focused solutions, from cloud threat analytics dashboards
-                                and log analysis projects to responsive web applications that present technical work clearly and professionally.
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                </Box>
-            </Box>
+                <Experience />
 
-            <Experience />
-
-            <Box py={10} sx={{ backgroundColor: '#5E548E', color: 'white' }}>
+                <Box py={10}>
                 <Box textAlign="center" mb={6}>
                     <SchoolIcon sx={{ width: '6rem', height: 'auto', color: 'white' }} />
                     <Typography variant="h3" mt={4} mb={2}>
@@ -150,7 +150,7 @@ const Resume = () => {
                 </Box>
             </Box>
 
-            <Box py={10} sx={{ backgroundColor: '#5E548E', color: 'white' }}>
+            <Box py={10}>
                 <Box textAlign="center" mb={6}>
                     <WorkspacePremiumIcon sx={{ width: '6rem', height: 'auto', color: 'white' }} />
                     <Typography variant="h3" mt={4} mb={2}>
@@ -179,7 +179,7 @@ const Resume = () => {
                 </Box>
             </Box>
 
-            <Box py={10} sx={{ backgroundColor: '#5E548E', color: 'white' }}>
+            <Box py={10}>
                 <Box textAlign="center" mb={6}>
                     <ScienceIcon sx={{ width: '6rem', height: 'auto', color: 'white' }} />
                     <Typography variant="h3" mt={4} mb={2}>
@@ -217,7 +217,7 @@ const Resume = () => {
                 </Box>
             </Box>
 
-            <Box py={10} sx={{ backgroundColor: '#5E548E', color: 'white' }}>
+            <Box py={10}>
                 <Box textAlign="center" mb={6}>
                     <SecurityIcon sx={{ width: '6rem', height: 'auto', color: 'white' }} />
                     <Typography variant="h3" mt={4} mb={2}>
@@ -247,6 +247,7 @@ const Resume = () => {
             </Box>
 
             <Skills />
+            </Box>
             <Footer />
         </>
     )

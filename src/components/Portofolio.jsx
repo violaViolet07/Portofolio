@@ -89,9 +89,11 @@ const Portofolio = () => {
             sx={{
                 width: '100%',
                 maxWidth: featured ? '100%' : 520,
-                backgroundColor: '#2D3748',
+                backgroundColor: 'rgba(32, 42, 58, 0.92)',
                 borderRadius: '1rem',
-                border: '1px solid rgba(255,255,255,0.08)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                boxShadow: '0 18px 40px rgba(0,0,0,0.22)',
+                backdropFilter: 'blur(2px)',
                 color: 'white'
             }}
         >
@@ -144,7 +146,7 @@ const Portofolio = () => {
 
     return (
         <>
-            <Box component="div" className='mainContainer' sx={{ minHeight: "100vh" }}>
+            <Box component="div" sx={{ minHeight: "100vh", backgroundColor: '#5E548E' }}>
                 <ParticlesComponent />
                 <Navbar />
 
