@@ -89,9 +89,32 @@ const Experience = () => {
                     Key Responsibilities:
                   </Typography>
 
-                  <Box component="ul" sx={{ pl: 2, m: 0 }}>
+                  <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
                     {role.responsibilities.map((responsibility) => (
-                      <Box component="li" key={responsibility} sx={{ mb: 1 }}>
+                      <Box
+                        key={responsibility}
+                        sx={{
+                          display: 'flex',
+                          alignItems: 'flex-start',
+                          gap: 1.5,
+                          backgroundColor: 'rgba(255,255,255,0.04)',
+                          border: '1px solid rgba(255,255,255,0.08)',
+                          borderRadius: '0.85rem',
+                          px: 2,
+                          py: 1.4
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            width: '0.65rem',
+                            height: '0.65rem',
+                            minWidth: '0.65rem',
+                            borderRadius: '50%',
+                            backgroundColor: '#FFFFFF',
+                            mt: '0.6rem',
+                            boxShadow: '0 0 10px rgba(255,255,255,0.35)'
+                          }}
+                        />
                         <Typography variant="body1" sx={{ color: '#CBD5E0', lineHeight: 1.6 }}>
                           {responsibility}
                         </Typography>

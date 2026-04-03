@@ -49,6 +49,27 @@ const sectionCardSx = {
     height: '100%'
 };
 
+const detailRowSx = {
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: 1.5,
+    backgroundColor: 'rgba(255,255,255,0.04)',
+    border: '1px solid rgba(255,255,255,0.08)',
+    borderRadius: '0.85rem',
+    px: 2,
+    py: 1.4
+};
+
+const detailDotSx = {
+    width: '0.65rem',
+    height: '0.65rem',
+    minWidth: '0.65rem',
+    borderRadius: '50%',
+    backgroundColor: '#FFFFFF',
+    mt: '0.6rem',
+    boxShadow: '0 0 10px rgba(255,255,255,0.35)'
+};
+
 const Resume = () => {
     return (
         <>
@@ -132,9 +153,10 @@ const Resume = () => {
                 <Box maxWidth="lg" mx="auto" px={3}>
                     <Card sx={sectionCardSx}>
                         <CardContent sx={{ p: 4 }}>
-                            <Box component="ul" sx={{ pl: 2.5, m: 0 }}>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
                                 {certifications.map((item) => (
-                                    <Box component="li" key={item} sx={{ mb: 1.5 }}>
+                                    <Box key={item} sx={detailRowSx}>
+                                        <Box sx={detailDotSx} />
                                         <Typography variant="body1" sx={{ color: '#CBD5E0', lineHeight: 1.7 }}>
                                             {item}
                                         </Typography>
@@ -166,9 +188,10 @@ const Resume = () => {
                                         <Typography variant="h5" sx={{ color: '#E2E8F0', mb: 2, fontWeight: 'bold' }}>
                                             {item.title}
                                         </Typography>
-                                        <Box component="ul" sx={{ pl: 2.5, m: 0 }}>
+                                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
                                             {item.details.map((detail) => (
-                                                <Box component="li" key={detail} sx={{ mb: 1.2 }}>
+                                                <Box key={detail} sx={detailRowSx}>
+                                                    <Box sx={detailDotSx} />
                                                     <Typography variant="body1" sx={{ color: '#CBD5E0', lineHeight: 1.7 }}>
                                                         {detail}
                                                     </Typography>
