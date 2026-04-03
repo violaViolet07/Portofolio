@@ -36,7 +36,7 @@ const Header = () => {
             </Typography>
             <br />
             <Typography sx={{ color: "#efc3e6", marginBottom: "3rem" }} variant="h5">
-                <ReactTyped strings={["Programming", "Web Development", "Web Design"]} typeSpeed={40}
+                <ReactTyped strings={["IT Specialist", "Cybersecurity Enthusiast", "Systems & Network Support", "Cloud Threat Analytics"]} typeSpeed={40}
                     backSpeed={60} loop />
             </Typography>
         </Box>
