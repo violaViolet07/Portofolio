@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+open-preview.bat
+preview-server.py
 
 # Editor directories and files
 .vscode/*

@@ -1,8 +1,22 @@
-# React + Vite
+# Violeta Vako Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React and Material UI portfolio using Violeta's original indigo, purple, lavender, and pink palette, redesigned with a cybersecurity-inspired visual system.
 
-Currently, two official plugins are available:
+The résumé page includes work experience, the IEEE-published cloud-security research project,
+certifications and professional training, cybersecurity competitions and labs, and the complete
+technical skill set.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+The production-ready files are created in `dist`.
