@@ -359,6 +359,64 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .skill-card svg { color: var(--hot-pink); filter: drop-shadow(0 0 7px rgba(240,166,202,.24)); }
 .skill-card p { color: var(--white); font-size: 1.08rem; font-weight: 700; }
 
+.education-section {
+  background: radial-gradient(circle at 12% 18%, rgba(240,166,202,.12), transparent 28rem) !important;
+}
+
+.education-list {
+  display: grid;
+  gap: 18px;
+}
+
+.education-card {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 24px;
+  align-items: center;
+  padding: 26px;
+  border-radius: 22px;
+}
+
+.education-badge {
+  display: grid;
+  width: 96px;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 24px;
+  color: var(--hot-pink);
+  background:
+    radial-gradient(circle, rgba(240,166,202,.16), transparent 64%),
+    rgba(94,84,142,.18);
+  box-shadow: inset 0 0 34px rgba(240,166,202,.06), 0 0 42px rgba(159,134,192,.16);
+}
+
+.education-badge svg { font-size: 3rem; }
+.education-copy h3 { margin: 18px 0 10px; color: var(--white); font-size: clamp(1.45rem, 2.4vw, 2.25rem); line-height: 1.16; }
+.education-school { max-width: 920px; color: var(--soft-pink) !important; font-size: 1.1rem !important; line-height: 1.55 !important; }
+
+.education-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.education-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--soft-pink);
+  background: rgba(94,84,142,.12);
+  font-size: .98rem;
+  font-weight: 700;
+}
+
+.education-meta svg { color: var(--hot-pink); font-size: 1.2rem; }
+
 .portfolio-page { min-height: 100vh; padding-bottom: 100px; }
 .portfolio-heading { padding: 90px 20px 48px; text-align: center; }
 .portfolio-grid { width: min(1180px, calc(100% - 40px)); margin: auto !important; }
@@ -505,6 +563,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .data-tag-left { left: 4px; bottom: 64px; }
   .section-block { padding: 84px 14px; }
   .section-title { font-size: 2.65rem !important; }
+  .education-card { grid-template-columns: 1fr; padding: 22px; text-align: center; }
+  .education-badge { margin: auto; }
+  .education-meta { justify-content: center; }
   .skill-grid { grid-template-columns: 1fr; }
   .responsibility-list li { font-size: 1.03rem; }
   .portfolio-heading { padding-top: 70px; }

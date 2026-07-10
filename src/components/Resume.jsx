@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import ParticlesComponent from './ParticlesComponent';
 import Skills from './Skills';
 import Experience from './Experience';
+import Education from './Education';
 import Research from './Research';
 import Certifications from './Certifications';
 
@@ -24,6 +25,7 @@ const Resume = () => {
           quickly, solving practical problems, and presenting technical work clearly.
         </Typography>
       </Box>
+      <Education />
       <Experience />
       <Research />
       <Certifications />
